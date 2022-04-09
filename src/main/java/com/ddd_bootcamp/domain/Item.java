@@ -11,6 +11,18 @@ public class Item {
         this.quantity = quantity;
     }
 
+    public String getProductName() {
+        return product.getName();
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public Price getProductPrice() {
+        return product.getPrice();
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -30,13 +42,5 @@ public class Item {
                 "product=" + product +
                 ", quantity=" + quantity +
                 '}';
-    }
-
-    public String getProductName() {
-        return product.getName();
-    }
-
-    public int getQuantity() {
-        return quantity;
     }
 }
