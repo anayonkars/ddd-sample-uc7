@@ -32,14 +32,23 @@ public class Application {
 
         cart.remove(applePencilItem1);
 
-        System.out.println("----------------------------------------");
+
         System.out.println("After Removing Apple Pencil with 2 quantity");
         System.out.println("Cart = " + cart);
         List<Item> items1 = cart.getItems();
         System.out.println("items = " + items1);
 
         System.out.println("----------------------------------------");
-        System.out.println("Removed product names = " + cart.removedProductNames());
+        Price price1 = new Price(new BigDecimal(11), Currency.getInstance("USD"));
+        Price price2 = new Price(new BigDecimal(11), Currency.getInstance("USD"));
+        System.out.println("price 1 and price 2 sameValueAs :" + price1.sameValueAs(price2));
+        System.out.println("price 1 and price 2 equals :" + price1.equals(price2));
+
+        System.out.println("----------------------------------------");
+
+
+
+
 
         //Code Problem 6
         //codeProblem6();
