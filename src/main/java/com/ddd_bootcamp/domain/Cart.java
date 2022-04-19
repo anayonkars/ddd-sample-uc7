@@ -35,7 +35,10 @@ public class Cart implements Entity<Cart> {
 
     @Override
     public String toString() {
-        return items.toString();
+        return "Cart{" +
+                "cartId=" + cartId +
+                ", items=" + items +
+                '}';
     }
 
     public void remove(Item item) {

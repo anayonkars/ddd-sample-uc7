@@ -2,7 +2,6 @@ package com.ddd_bootcamp.domain;
 
 import java.math.BigDecimal;
 import java.util.Currency;
-import java.util.Objects;
 
 public class Price implements ValueObject<Price> {
     private BigDecimal value;
